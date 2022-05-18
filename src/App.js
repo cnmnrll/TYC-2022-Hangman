@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+//import components from "./componenets/*"
+import Header from "./components/Header";
+import SetWord from "./components/SetWord";
+import Gallows from "./components/Gallows";
+import Stickman from "./components/Stickman";
+import WrongGuess from "./components/WrongGuess";
+import Main from "./components/Main";
+import FailPop from "./components/FailPop";
+import SuccessPop from "./components/SuccessPop";
+import Notification from "./components/Notification";
 
-function App() {
+export default function app() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <SetWord />
+      <div>
+        <Gallows />
+        <Stickman />
+        <WrongGuess />
+      </div>
+      <Main />
+      <FailPop />
+      <SuccessPop />
+      <Notification />
     </div>
   );
 }
-
-export default App;
