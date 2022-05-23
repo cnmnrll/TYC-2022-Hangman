@@ -1,0 +1,51 @@
+#navhome-heading {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding-top: 20px;
+}
+
+#navhome-buttons {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  color: white;
+  border-width: 4px;
+  border-color: white;
+  background-color: transparent;
+  text-align: center;
+  font-size: 4vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  height: 20vw;
+  max-height: 150px;
+  width: 40vw;
+  max-width: 300px;
+  margin: 20px;
+  transition: background-color 0.1s, border-color 0.1s, transform 0.1s;
+}
+
+#navhome-buttons:focus {
+  box-shadow: none;
+}
+
+@media screen and (min-width: 900px) {
+  #navhome-heading {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #navhome-buttons {
+    font-size: 35px;
+  }
+}
+
+#navhome-buttons:hover {
+  background-color: #fe2c55;
+  border-color: #fe2c55;
+  transform: scale(1.1);
+}
