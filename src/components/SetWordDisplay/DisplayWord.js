@@ -1,10 +1,18 @@
-//xueqing
+import React from 'react';
 
-import React from "react";
-import "./DisplayWord.css";
+const DisplayWord = ({ selectedWord, correctLetters }) => {
 
-const DisplayWord = () => {
-  return <div></div>;
-};
+  return (
+    <div className="displayword">
+      {selectedWord.split('').map((letter, i) => {
+        return (
+          <span className="letter" key={i}>
+            {correctLetters.includes(letter) ? letter : ''}
+          </span>
+        )
+      })}
+    </div>
+  )
+}
 
-export default DisplayWord;
+export default DisplayWord
