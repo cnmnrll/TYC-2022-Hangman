@@ -1,0 +1,17 @@
+h1 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+      "Times New Roman", Times, serif;
+    color: white;
+    text-align: center;
+    cursor: default;
+    text-transform: uppercase;   
+}
+  
+.instructions {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #00f2ea;
+  padding-top: 15px;
+  line-height: 30px;
+}
