@@ -7,7 +7,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div id={theme}>
+    <div>
       <div id="header-container">
         <Row>
           <Link to="/" style={{ textDecoration: "none" }}>
