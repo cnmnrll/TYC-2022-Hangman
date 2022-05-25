@@ -1,6 +1,6 @@
 //zhi ying
 
-import React from "react";
+import React, {useEffect} from 'react';
 import "./SuccessPopUp.css";
 
 function checkWin(correct, wrong, word) {
@@ -27,9 +27,12 @@ const SuccessPopUp = ({correctLetters, selectedWord, setPlayable, playAgain}) =>
   if( checkWin(correctLetters, wrongLetters, selectedWord) === 'win' ) {
     finalMessage = 'Congratulations! You saved the man!';
     playable = false;
-  
-    return (
-      <div className="popup-container" style={finalMessage !== '' ? {display:'flex'} : {}}>
+  }
+
+  useEffect(() => {setPlayable(playable);});
+
+  return (
+    <div className="popup-container" style={finalMessage !== '' ? {display:'flex'} : {}}>
       <div className="popup">
         <h2>{finalMessage}</h2>
         <button onClick={playAgain}>Play Again</button>
@@ -37,5 +40,4 @@ const SuccessPopUp = ({correctLetters, selectedWord, setPlayable, playAgain}) =>
     </div>
   )
 }
-
 export default SuccessPopUp;
