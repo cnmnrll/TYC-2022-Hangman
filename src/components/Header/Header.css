@@ -1,0 +1,40 @@
+#header-container {
+  margin-bottom: 80px;
+}
+
+#header-head {
+  display: flex;
+  text-align: center;
+  margin: 10px;
+}
+
+.break {
+  border: none;
+  height: 4px !important;
+  color: #00f2ea;
+  margin-top: 0px;
+  opacity: 100%;
+}
+
+.header {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 2px;
+  font-size: 7vw;
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    font-size: 42px;
+  }
+}
+
+.header:hover {
+  color: #00f2ea;
+  cursor: pointer;
+  transform: scale(1.1);
+}

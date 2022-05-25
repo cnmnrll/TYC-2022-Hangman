@@ -7,6 +7,7 @@
   font-weight: 800;
   letter-spacing: 1px;
   padding-top: 20px;
+  cursor: default;
 }
 
 #navhome-buttons {
@@ -22,8 +23,8 @@
   letter-spacing: 1px;
   height: 20vw;
   max-height: 150px;
-  width: 40vw;
-  max-width: 300px;
+  width: 35vw;
+  max-width: 263px;
   margin: 20px;
   transition: background-color 0.1s, border-color 0.1s, transform 0.1s;
 }
@@ -32,9 +33,9 @@
   box-shadow: none;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   #navhome-heading {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
@@ -45,7 +46,7 @@
 }
 
 #navhome-buttons:hover {
-  background-color: #fe2c55;
-  border-color: #fe2c55;
+  background-color: #00f2ea;
+  border-color: #00f2ea;
   transform: scale(1.1);
 }

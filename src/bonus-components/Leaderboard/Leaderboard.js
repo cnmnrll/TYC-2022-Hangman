@@ -3,6 +3,7 @@ import { Table, Col, Row, Container } from "react-bootstrap";
 import "./Leaderboard.css";
 
 const Leaderboard = () => {
+  const players = localStorage.getItem("name");
   return (
     <div>
       <Container className="justify-content-center">
@@ -30,7 +31,7 @@ const Leaderboard = () => {
               <tbody>
                 <tr>
                   <td className="leaderboard-rank">1</td>
-                  <td className="leaderboard-player">Mark</td>
+                  <td className="leaderboard-player">{players}</td>
                   <td className="leaderboard-score">12345</td>
                 </tr>
               </tbody>

@@ -1,0 +1,120 @@
+#difficulty-heading {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  cursor: default;
+}
+
+#difficulty-buttons {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  color: white;
+  border-width: 4px;
+  border-color: white;
+  background-color: transparent;
+  text-align: center;
+  font-size: 4vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  height: 20vw;
+  max-height: 150px;
+  width: 35vw;
+  max-width: 263px;
+  margin: 20px;
+  transition: background-color 0.1s, border-color 0.1s, transform 0.1s;
+}
+
+#difficulty-buttons:focus {
+  box-shadow: none;
+}
+
+@media screen and (min-width: 700px) {
+  #difficulty-heading {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #difficulty-buttons {
+    font-size: 35px;
+  }
+}
+
+#difficulty-buttons:hover {
+  background-color: #00f2ea;
+  border-color: #00f2ea;
+  transform: scale(1.1);
+}
+
+#modal {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  width: 40vw;
+  min-width: fit-content;
+}
+
+#modal .modal-content {
+  color: white;
+  background-color: black !important;
+  border-width: 1px;
+  border-color: white;
+}
+
+#modal-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#modal-body {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+
+#modal-form {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#modal-input {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  border-width: 3px;
+  border-color: #dddddd;
+  margin-bottom: 20px;
+}
+
+#modal-input:focus {
+  box-shadow: none;
+  border-color: #dddddd;
+}
+
+#modal-button {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  background-color: #00f2ea;
+  border-color: #00f2ea;
+  border-width: 3px;
+}
+
+#modal-button:hover {
+  transform: scale(1.1);
+}
+
+#modal-button:focus {
+  box-shadow: none;
+}
