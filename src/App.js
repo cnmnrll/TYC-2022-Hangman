@@ -10,7 +10,7 @@ import Leaderboard from "./bonus-components/Leaderboard/Leaderboard";
 import Footer from "./components/Footer/Footer";
 import Difficulty from "./components/Main/Difficulty";
 
-export default function app() {
+export default function App() {
   return (
     <Router>
       <div id="body">

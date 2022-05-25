@@ -6,19 +6,6 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-  const [dark, setDark] = useState(true);
-
-  function handleClick() {
-    setDark(!dark);
-    if (dark) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
-    }
-  }
-
-  const theme = localStorage.getItem("theme");
-
   return (
     <div id={theme}>
       <div id="header-container">
