@@ -1,0 +1,10 @@
+.Stickman-container{
+    fill: transparent;
+    stroke:aliceblue;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.Stickman-part{
+    display: none;
+}
