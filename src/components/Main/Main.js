@@ -1,5 +1,6 @@
 //xueqing
 
+import Stickman from "../HangmanFigure/Stickman";
 import React from "react";
 import "./Main.css";
 import { useState } from "react";
@@ -69,7 +70,7 @@ const Main = () => {
       <h1 className="heading">Guess the word from category :</h1>
       <br />
       <h1 className="category">{category}</h1>
-      <h1 className="hangman">hangman goes here</h1>
+      <h1 className="hangman"><Stickman/></h1>
       <h1 className="wrong-guesses">wrong guesses : {wrongGuesses}</h1>
       <h1 className="letters-display">{letterDisplay}</h1>
       <Col className="text-center">
@@ -163,3 +164,4 @@ const Main = () => {
 };
 
 export default Main;
+
