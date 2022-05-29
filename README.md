@@ -1,6 +1,6 @@
 # Hangman TikTok Youth Camp 2022
 
-To start : cd to this folder and type npm start or simply click [here](https://hangman-tyc.netlify.app/)!
+To start : cd to this folder and type npm start OR simply click [here](https://hangman-tyc.netlify.app/)!
 
 ### Game Mode 1 : Friends
 
