@@ -1,14 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  Col,
-  FormControl,
-  Row,
-  Form,
-  Container,
-  Button,
-} from "react-bootstrap";
+import { FormControl, Row, Form, Container, Button } from "react-bootstrap";
 import "./CustomWord.css";
 
 const CustomWord = () => {
