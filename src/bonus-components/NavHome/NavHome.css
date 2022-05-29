@@ -6,7 +6,6 @@
   font-size: 5vw;
   font-weight: 800;
   letter-spacing: 1px;
-  padding-top: 20px;
   cursor: default;
 }
 
@@ -21,11 +20,10 @@
   font-size: 4vw;
   font-weight: 800;
   letter-spacing: 1px;
-  height: 20vw;
-  max-height: 150px;
+  height: 35vw;
   width: 35vw;
-  max-width: 263px;
   margin: 20px;
+  margin-bottom: 0px;
   transition: background-color 0.1s, border-color 0.1s, transform 0.1s;
 }
 
@@ -39,9 +37,11 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   #navhome-buttons {
-    font-size: 35px;
+    font-size: 28px;
+    width: 245px;
+    height: 245px;
   }
 }
 
@@ -49,4 +49,14 @@
   background-color: #00f2ea;
   border-color: #00f2ea;
   transform: scale(1.1);
+}
+
+#icon {
+  font-size: 10vw;
+}
+
+@media screen and (min-width: 700px) {
+  #icon {
+    font-size: 70px;
+  }
 }

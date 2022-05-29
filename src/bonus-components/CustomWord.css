@@ -1,0 +1,68 @@
+#input-heading {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  #input-heading {
+    font-size: 35px;
+  }
+}
+
+#input {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  font-weight: 800;
+  color: black;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  height: 11vw;
+}
+
+@media screen and (min-width: 600px) {
+  #input-heading {
+    font-size: 30px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #input {
+    font-size: 21px;
+    height: 65px;
+  }
+}
+
+#button {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  font-weight: 800;
+  color: white;
+  background-color: #00f2ea;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  font-size: 3.5vw;
+  transition: transform 0.1s;
+}
+
+#button:hover {
+  transform: scale(1.1);
+}
+
+#button:focus {
+  box-shadow: none;
+}
+
+@media screen and (min-width: 600px) {
+  #button {
+    font-size: 21px;
+  }
+}

@@ -1,46 +1,87 @@
 import React from "react";
+import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Home from "./Home";
-import Instructions1 from "./bonus-components/Instructions1/Instructions1";
-import Instructions2 from "./bonus-components/Instructions2/Instructions2";
-import Game1 from "./Game1";
-import Game2 from "./Game2";
-import Leaderboard from "./bonus-components/Leaderboard/Leaderboard";
+import Instructions1 from "./bonus-components/Instructions/Instructions1";
+import Instructions2 from "./bonus-components/Instructions/Instructions2";
 import Footer from "./components/Footer/Footer";
-import Difficulty from "./components/Main/Difficulty";
+import Difficulty from "./bonus-components/Difficulty/Difficulty";
+import CustomWord from "./bonus-components/CustomWord";
+import NavHome from "./bonus-components/NavHome/NavHome";
+import Main1 from "./components/Main/Main1";
+import Main2 from "./components/Main/Main2";
 
 export default function App() {
   return (
     <Router>
-      <div id="body">
-        <Header />
+      <div>
         <div>
           <Switch>
             <Route exact path="/">
-              <Home />
+              <div className="body">
+                <Header />
+                <div className="content">
+                  <NavHome />
+                </div>
+                <Footer />
+              </div>
+            </Route>
+            <Route exact path="/input">
+              <div className="body">
+                <Header />
+                <div className="content">
+                  <CustomWord />
+                </div>
+                <Footer />
+              </div>
             </Route>
             <Route exact path="/difficulty">
-              <Difficulty />
+              <div className="body">
+                <Header />
+                <div className="content">
+                  <Difficulty />
+                </div>
+                <Footer />
+              </div>
             </Route>
-            <Route exact path="/Instructions1">
-              <Instructions1 />
+            <Route exact path="/instructions-friends">
+              <div className="body">
+                <Header />
+                <div className="content">
+                  <Instructions1 />
+                </div>
+                <Footer />
+              </div>
             </Route>
-            <Route exact path="/Instructions2">
-              <Instructions2 />
+            <Route exact path="/instructions-classic">
+              <div className="body">
+                <Header />
+                <div className="content">
+                  <Instructions2 />
+                </div>
+                <Footer />
+              </div>
             </Route>
-            <Route exact path="/game1">
-              <Game1 />
+            <Route exact path="/game-friends">
+              <div className="bigger-body">
+                <Header />
+                <div className="content">
+                  <Main1 />
+                </div>
+                <Footer />
+              </div>
             </Route>
-            <Route exact path="/game2">
-              <Game2 />
-            </Route>
-            <Route exact path="/leaderboard">
-              <Leaderboard />
+            <Route exact path="/game-classic">
+              <div className="bigger-body">
+                <Header />
+                <div className="content">
+                  <Main2 />
+                </div>
+                <Footer />
+              </div>
             </Route>
           </Switch>
         </div>
-        <Footer />
       </div>
     </Router>
   );

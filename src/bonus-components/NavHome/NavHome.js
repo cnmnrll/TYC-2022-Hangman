@@ -11,11 +11,19 @@ const NavHome = () => {
           <p>CHOOSE A GAME MODE</p>
         </Row>
         <Col className=" d-flex justify-content-center">
-          <Link to="/Instructions1">
-            <Button id="navhome-buttons">CLASSIC</Button>
+          <Link to="/instructions-friends">
+            <Button id="navhome-buttons">
+              <i id="icon" class="bi bi-people-fill"></i>
+              <br />
+              FRIENDS
+            </Button>
           </Link>
           <Link to="/difficulty">
-            <Button id="navhome-buttons">ARCADE</Button>
+            <Button id="navhome-buttons">
+              <i id="icon" class="bi bi-emoji-dizzy-fill"></i>
+              <br />
+              CLASSIC
+            </Button>
           </Link>
         </Col>
       </Container>

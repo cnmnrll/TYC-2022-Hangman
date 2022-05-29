@@ -2,6 +2,7 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
     "Times New Roman", Times, serif;
   letter-spacing: 1px;
+  margin-bottom: 25px;
   margin-top: 100px;
   height: fit-content;
 }
@@ -11,6 +12,7 @@
   height: 4px !important;
   color: #00f2ea;
   opacity: 100%;
+  margin-top: 0px;
 }
 
 #footer-title {
@@ -39,7 +41,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 3vw;
-  transition: transform, 0s;
+  transition: color 0.1s, transform 0.1s;
 }
 
 @media screen and (min-width: 600px) {

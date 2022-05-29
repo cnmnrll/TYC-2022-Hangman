@@ -25,11 +25,12 @@
   letter-spacing: 1px;
   margin: 2px;
   font-size: 7vw;
+  transition: color 0.1s, transform 0.1s;
 }
 
 @media screen and (min-width: 700px) {
   .header {
-    font-size: 42px;
+    font-size: 49px;
   }
 }
 

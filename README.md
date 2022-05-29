@@ -1,6 +1,16 @@
-# Hangman for TikTok Youth Camp 2022
+# Hangman TikTok Youth Camp 2022
 
-## How-To-Play
+To start : cd to this folder and type npm start
 
-1. ask someone to enter a word based off a categry for you to guess
-2. key in letters and try to guess the word
+### Game Mode 1 : Friends
+
+1. Ask your friend to choose any word from any category of their choice for you to guess.
+2. Read the game instructions provided and start the game.
+3. After your turn, switch players and now you will choose a word and category for your friend to guess.
+4. See who guessed more words right!
+
+### Game Mode 1 : Classic
+
+1. No friends around? No worries! Pick a difficulty mode.
+2. Read the game instructions provided and start the game.
+3. Have fun!

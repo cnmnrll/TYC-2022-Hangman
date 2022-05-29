@@ -129,4 +129,12 @@ for (let i = 0; i < Math.round(word.length / 3); i++) {
 
 let randomIndexes = [...new Set(indexes)];
 
+for (let i = 0; i < word.length; i++) {
+  for (var idx of randomIndexes) {
+    if (word[i] === word[idx] && !(i === idx)) {
+      randomIndexes.push(i);
+    }
+  }
+}
+
 export { category, word, randomIndexes };

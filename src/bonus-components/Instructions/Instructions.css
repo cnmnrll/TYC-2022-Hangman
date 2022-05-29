@@ -1,0 +1,67 @@
+#heading {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
+  cursor: default;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#instructions {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  font-size: 2.5vw;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: white;
+  padding-top: 15px;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  cursor: default;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 700px) {
+  #instructions {
+    font-size: 18px;
+  }
+}
+
+#button {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
+    "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 800;
+  color: white !important;
+  background-color: #00f2ea !important;
+  border-color: #00f2ea;
+  margin-top: 20px;
+  height: 9vw;
+  width: 40vw;
+  transition: background-color 0.1s, border-color 0.1s, transform 0.1s;
+}
+
+@media screen and (min-width: 700px) {
+  #button {
+    font-size: 21px;
+    height: 63px;
+    width: 210px;
+  }
+}
+
+#button:focus {
+  box-shadow: none;
+}
+
+#button:hover {
+  transform: scale(1.1);
+}
+
+#span {
+  color: #00f2ea;
+}

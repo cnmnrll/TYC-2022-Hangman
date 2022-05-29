@@ -109,6 +109,7 @@
   background-color: #00f2ea;
   border-color: #00f2ea;
   border-width: 3px;
+  transition: transform 0.1s;
 }
 
 #modal-button:hover {

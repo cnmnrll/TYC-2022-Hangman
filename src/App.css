@@ -1,0 +1,22 @@
+.body {
+  display: grid;
+  grid-template-rows: auto 80vh auto;
+}
+
+.bigger-body {
+  display: grid;
+  gap: 0px;
+  grid-template-rows: auto auto auto;
+}
+
+@media screen and (min-height: 800px) {
+  .bigger-body {
+    grid-template-rows: auto 80vh auto;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
