@@ -32,7 +32,6 @@ const CustomWord = () => {
   }
 
   function handleClick() {
-    localStorage.clear();
     localStorage.setItem("word", state.word);
     localStorage.setItem("category", state.cat);
   }

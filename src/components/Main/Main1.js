@@ -28,6 +28,14 @@ const Main1 = (props) => {
 
   const [wrongGuesses, setWrongGuesses] = useState([]);
 
+  if (!localStorage.getItem("words guessed")) {
+    localStorage.setItem("words guessed", "");
+  }
+
+  var wg = localStorage.getItem("words guessed");
+
+  const [wordsGuessed, setWordsGuessed] = useState(wg);
+
   function handleClick(event) {
     const input = event.target.value;
     let indexes = [];
@@ -71,6 +79,12 @@ const Main1 = (props) => {
       setModalTitle("CONGRATS !");
       setModalBody("YOU GUESSED THE WORD ! CLICK BELOW TO PLAY AGAIN");
       setShow(true);
+      if (localStorage.getItem("words guessed")) {
+        let s = localStorage.getItem("words guessed");
+        s = s + ", " + word;
+        localStorage.setItem("words guessed", s);
+        setWordsGuessed(s);
+      }
     }
   }
 
@@ -200,6 +214,11 @@ const Main1 = (props) => {
         <Button id="buttons" value="z" onClick={handleClick}>
           Z
         </Button>
+      </Col>
+      <Col className="text-center">
+        <p id="words-guessed">
+          Words Guessed: <br /> {wordsGuessed}
+        </p>
       </Col>
       <Modal
         id="modal"
