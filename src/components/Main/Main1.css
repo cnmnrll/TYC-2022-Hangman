@@ -182,20 +182,3 @@ br {
 #end-button:focus {
   box-shadow: none;
 }
-
-#words-guessed {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif, Georgia,
-    "Times New Roman", Times, serif;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 1px;
-  margin-top: 50px;
-  font-size: 2vw;
-}
-
-@media screen and (min-width: 700px) {
-  #words-guessed {
-    font-size: 14px;
-  }
-}
