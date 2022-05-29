@@ -21,7 +21,7 @@ const Footer = () => {
             <h1 className="footer">Wong</h1>
           </Col>
           <Col lg="2" md="2" sm="4">
-            <h1 className="footer">Xun Yuan</h1>
+            <h1 className="footer">XunYuan</h1>
           </Col>
           <Col lg="2" md="2" sm="4">
             <h1 className="footer">Justin</h1>
