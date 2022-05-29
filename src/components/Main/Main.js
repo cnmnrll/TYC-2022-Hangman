@@ -40,26 +40,38 @@ const Main = () => {
 
   const [wrongGuesses, setWrongGuesses] = useState([]);
 
-  function handleClick(event) {
-    const input = event.target.value;
-    let indexes = [];
-    for (let i = 0; i < word.length; i++) {
-      if (word[i] === input) {
-        indexes.push(i);
-      }
+  const [success, setSuccess] = useState("");
+
+  function checkComplete() {
+    if (!letterDisplay.includes("__ ")) {
+      setSuccess("success");
     }
-    if (indexes.length === 0 && !wrongGuesses.includes(input)) {
-      setWrongGuesses((prevWrongGuesses) => [
-        ...prevWrongGuesses,
-        input + "  ",
-      ]);
-    } else {
-      for (let idx = 0; idx < indexes.length; idx++) {
-        setLetterDisplay((prevLetterDisplay) => [
-          ...prevLetterDisplay.slice(0, indexes[idx]),
-          input + " ",
-          ...prevLetterDisplay.slice(indexes[idx] + 1),
+
+    function handleClick(event) {
+      const input = event.target.value;
+      let indexes = [];
+      for (let i = 0; i < word.length; i++) {
+        if (word[i] === input) {
+          indexes.push(i);
+        }
+      }
+      if (indexes.length === 0 && !wrongGuesses.includes(input)) {
+        setWrongGuesses((prevWrongGuesses) => [
+          ...prevWrongGuesses,
+          input + "  ",
         ]);
+        if (wrongGuesses.length === 10) {
+          setSuccess("fail");
+        }
+      } else {
+        for (let idx = 0; idx < indexes.length; idx++) {
+          setLetterDisplay((prevLetterDisplay) => [
+            ...prevLetterDisplay.slice(0, indexes[idx]),
+            input + " ",
+            ...prevLetterDisplay.slice(indexes[idx] + 1),
+          ]);
+        }
+        checkComplete();
       }
     }
   }
@@ -158,6 +170,24 @@ const Main = () => {
           Z
         </Button>
       </Col>
+      <div className="popup-container">
+        {success === "success" ? (
+          <div className="popup">
+            <h2>YOU DID IT!</h2>
+            <button>Play Again</button>
+          </div>
+        ) : (
+          <div></div>
+        )}
+        {success === "fail" ? (
+          <div className="popup">
+            <h2>YOU SUCK!</h2>
+            <button>Play Again</button>
+          </div>
+        ) : (
+          <div></div>
+        )}
+      </div>
     </div>
   );
 };
