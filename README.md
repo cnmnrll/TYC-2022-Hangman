@@ -9,7 +9,7 @@ To start : cd to this folder and type npm start OR simply click [here](https://h
 3. After your turn, switch players and now you will choose a word and category for your friend to guess.
 4. See who guessed more words right!
 
-### Game Mode 1 : Classic
+### Game Mode 2 : Classic
 
 1. No friends around? No worries! Pick a difficulty mode.
 2. Read the game instructions provided and start the game.
